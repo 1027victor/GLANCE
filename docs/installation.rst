@@ -1,31 +1,31 @@
 Installation
 ============
 
-Python environment
-------------------
+We recommend using a dedicated Python 3.10 environment:
 
-The repository recommends a dedicated Python 3.10 environment:
-
-.. code-block:: bash
+.. code-block:: shell
 
    conda create -n glancevae python=3.10.19 -y
    conda activate glancevae
 
-Install from GitHub
--------------------
+**GPU support.** If you plan to use GPU acceleration, install the appropriate
+CUDA-enabled version of `PyTorch <https://pytorch.org/get-started/locally/>`_
+before installing GLANCE. For example, for CUDA 12.6:
 
-Git must be installed for these commands.
+.. code-block:: shell
 
-.. code-block:: bash
+   pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cu126
+
+**Install GLANCE.** Install GLANCE directly from GitHub:
+
+.. code-block:: shell
 
    pip install "glancevae @ git+https://github.com/yilitai/GLANCE.git"
 
-For the notebook examples, install the tutorial extras:
+To install the additional dependencies used in the tutorial notebooks:
 
-.. code-block:: bash
+.. code-block:: shell
 
    pip install "glancevae[tutorials] @ git+https://github.com/yilitai/GLANCE.git"
 
-For NVIDIA GPU training, install the appropriate CUDA-enabled version of
-`PyTorch <https://pytorch.org/get-started/locally/>`_ before installing GLANCE.
-CPU execution is also supported.
+These commands require Git to be installed.
