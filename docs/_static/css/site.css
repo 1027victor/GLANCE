@@ -14,3 +14,32 @@ body[data-theme="dark"] .sidebar-logo { background: #fff; border-radius: 6px; pa
 .glance-tutorial-card .card-title { color: var(--color-brand-content); font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
 .glance-tutorial-card .card-description { color: var(--color-foreground-secondary); line-height: 1.6; }
 @media (max-width: 560px) { .glance-tutorial-grid { grid-template-columns: 1fr; } }
+
+/* SpaLP / sphinx_rtd_theme-style plain command blocks, installation only. */
+.installation-shell {
+  margin: 1px 0 24px;
+  border: 1px solid #e1e4e5;
+  border-radius: 0;
+  background: #f8f8f8;
+  box-shadow: none;
+}
+.installation-shell .highlight,
+.installation-shell pre {
+  background: #f8f8f8;
+  border-radius: 0;
+}
+.installation-shell pre {
+  margin: 0;
+  padding: 12px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre;
+  overflow-x: auto;
+}
+.installation-shell pre,
+.installation-shell pre span {
+  color: #404040;
+  font-weight: normal;
+  font-style: normal;
+}
